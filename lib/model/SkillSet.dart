@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants.dart';
 
 class SkillSet {
   final int id;
@@ -6,30 +7,57 @@ class SkillSet {
   final Color color;
   SkillSet({this.image,this.color,this.title,this.id});
 }
-List<SkillSet> services = [
+List<SkillSet> skills = [
   SkillSet(
     id: 1,
-    title: "Graphic Design",
-    image: "assets/images/graphic.png",
-    color: Color(0xFFD9FFFC),
+    title: "Android",
+    image: "assets/images/android.png",
+    color: drawerColor,
   ),
   SkillSet(
     id: 2,
-    title: "Web Design",
-    image: "assets/images/desktop.png",
-    color: Color(0xFFE4FFC7),
+    title: "Java",
+    image: "assets/images/java.png",
+    color: drawerColor,
   ),
   SkillSet(
     id: 3,
-    title: "UI Design",
-    image: "assets/images/ui.png",
-    color: Color(0xFFFFF3DD),
+    title: "Koltin",
+    image: "assets/images/kotlin.png",
+    color: drawerColor,
   ),
   SkillSet(
     id: 4,
-    title: "Interaction Design",
-    image: "assets/images/Intreaction_design.png",
-    color: Color(0xFFFFE0E0),
+    title: "Flutter",
+    image: "assets/images/flutter.png",
+    color: drawerColor,
   ),
+  SkillSet(
+    id: 5,
+    title: "Node.js",
+    image: "assets/images/node.png",
+    color: drawerColor,
+  ),
+  SkillSet(
+    id: 6,
+    title: "MongoDB",
+    image: "assets/images/mongo.png",
+    color: drawerColor,
+  ),
+  SkillSet(
+    id: 7,
+    title: "Firebase",
+    image: "assets/images/firebase.png",
+    color: drawerColor,
+  ),
+  SkillSet(
+    id: 8,
+    title: "Git",
+    image: "assets/images/git.png",
+    color: drawerColor,
+  ),
+
+
+
 
 ];
