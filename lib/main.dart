@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants.dart';
 import 'package:portfolio/home.dart';
 import 'package:portfolio/providers/page_position.dart';
 import 'package:provider/provider.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Hritik Gupta",
-      
+      color: backgroundColor,
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           primarySwatch: Colors.amber),
