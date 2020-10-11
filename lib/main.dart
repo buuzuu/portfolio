@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          primarySwatch: Colors.amber),
       home: ChangeNotifierProvider(
         create: (_) => PagePosition(),
         child: HomePage(),

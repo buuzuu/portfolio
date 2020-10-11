@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
+import 'package:portfolio/providers/page_position.dart';
+import 'package:provider/provider.dart';
+
 
 class IntroAbout extends StatefulWidget {
   @override
@@ -12,6 +15,7 @@ class _IntroAboutState extends State<IntroAbout> {
 
   @override
   Widget build(BuildContext context) {
+    final PagePosition pos = Provider.of<PagePosition>(context);
     return Container(
       margin: EdgeInsets.only(left: 60),
       width: 600,
@@ -51,7 +55,9 @@ class _IntroAboutState extends State<IntroAbout> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    pos.setPagePosition(2);
+                  },
                   onHover: (value) {
                     setState(() {
                       _isHover = value;
@@ -77,7 +83,7 @@ class _IntroAboutState extends State<IntroAbout> {
                             color: Colors.white,
                           ),
                           Text(
-                            "  Portfolio",
+                            "  Projects",
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
@@ -91,7 +97,9 @@ class _IntroAboutState extends State<IntroAbout> {
                 Padding(
                   padding: const EdgeInsets.only(left: 12),
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      pos.setPagePosition(1);
+                    },
                     onHover: (value) {
                       setState(() {
                         _isHover2 = value;

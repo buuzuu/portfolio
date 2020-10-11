@@ -8,32 +8,11 @@ class SkillSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              margin: EdgeInsets.only(bottom: 8),
-              width: 5,
-              height: 40,
-              color: secondaryColor,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 15, bottom: 15),
-              child: Text(
-                "What I do",
-                style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500),
-              ),
-            ),
-          ],
-        ),
+        sectionDivider("What I do"),
         Text(skillText,
             style: TextStyle(
-              color: Colors.white.withOpacity(0.8),
-              fontSize: 15,
+              color: Colors.white.withOpacity(0.6),
+              fontSize: 18,
             )),
         GridView.builder(
           itemCount: skills.length,

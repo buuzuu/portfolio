@@ -7,12 +7,11 @@ class Intro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        IntroAbout(),
-        Spacer(),
-        Image.asset("assets/images/side.png", height: 400, width: 400,),
-        Spacer(),
+        Flexible(flex: 4 ,child: IntroAbout(),fit: FlexFit.tight,),
+        Flexible(flex: 1, child: SizedBox(width: 60), fit: FlexFit.tight),
+        Flexible(child: Image.asset("assets/images/side.png", height: 400, width: 400,), flex: 3, fit: FlexFit.loose,),
       ],
     );
   }

@@ -27,16 +27,8 @@ class ProfileImage extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 18),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 24, bottom: 20),
-            child: Text(
-              "Hritik Gupta",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),
-            ),
+          SizedBox(
+            height: 50,
           ),
           CircleAvatar(
             minRadius: 50,
@@ -47,17 +39,17 @@ class ProfileImage extends StatelessWidget {
             padding:
                 const EdgeInsets.only(top: 15, left: 8, right: 8, bottom: 18),
             child: Text(
-              "Hi, my name is Hritik Gupta and I'm a Full Stack Mobile Developer.",
+              "Hi, my name is Hritik Gupta. I am 23 years young currently living in Dublin, Ireland. ",
               style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'Bubble',
+                color: Colors.white.withOpacity(.6),
                 fontWeight: FontWeight.normal,
-                fontSize: 22,
+                fontSize: 16,
               ),
               softWrap: true,
               textAlign: TextAlign.center,
             ),
           ),
+          SizedBox(height: 10,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
