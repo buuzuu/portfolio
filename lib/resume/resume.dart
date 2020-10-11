@@ -99,7 +99,7 @@ class _ResumeState extends State<Resume> {
                       offset: Offset(0, 0),
                       blurRadius: 15)
                 ]),
-                child: Image.asset("assets/images/resume.png"),
+                child: Image.asset("assets/images/resume2.jpg")
               ),
             ),
           ],
