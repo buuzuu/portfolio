@@ -90,67 +90,26 @@ class _ProjectDetailsState extends State<ProjectDetails> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center ,
               children: [
-                Container(
-                  height: 50,
-                  width: 180,
-                  child: RaisedButton(
-                    onPressed: (){
-                      _launchURL(recentWorks[widget.position].github);
-                    },
-                    color: secondaryColor,
-                    child: Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset("assets/images/git_blk.png"),
-                            Spacer(),
-                            Text(
-                              "View on Github",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 14),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+                FloatingActionButton.extended(
+                  onPressed: (){
+                    _launchURL(recentWorks[widget.position].github);
+                  },
+                  icon: Icon(Icons.auto_stories  ,color: Colors.black,),
+                  label: Text(" View On Github "),
+
                 ),
                 if(recentWorks[widget.position].playStore.length > 5)
                 SizedBox(width: 20),
                 if(recentWorks[widget.position].playStore.length > 5)
-                  Container(
-                  height: 50,
-                  width: 180,
-                  child: RaisedButton(
+                  FloatingActionButton.extended(
                     onPressed: (){
                       _launchURL(recentWorks[widget.position].playStore);
                     },
-                    color: secondaryColor,
-                    child: Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset("assets/images/playStore.png"),
-                            Spacer(),
-                            Text(
-                              "Download App",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 14),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                )
+                    label: Text(" Google Play Store "),
+                    icon: Icon(Icons.download_rounded,color: Colors.black,),
+
+
+                  )
               ],
             ),
           ),

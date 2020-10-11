@@ -39,7 +39,7 @@ class ProfileImage extends StatelessWidget {
             padding:
                 const EdgeInsets.only(top: 15, left: 8, right: 8, bottom: 18),
             child: Text(
-              "Hi, my name is Hritik Gupta. I am 23 years young currently living in Dublin, Ireland. ",
+              "Hi, my name is Hritik Gupta. I am 24 years young currently living in Dublin, Ireland. ",
               style: TextStyle(
                 color: Colors.white.withOpacity(.6),
                 fontWeight: FontWeight.normal,
