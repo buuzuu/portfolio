@@ -1,4 +1,3 @@
-import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 class PagePosition with ChangeNotifier {
@@ -6,10 +5,8 @@ class PagePosition with ChangeNotifier {
 
   int get pagePosition => position;
 
-  void setPagePosition(int val){
-    position = val ;
+  void setPagePosition(int val) {
+    position = val;
     notifyListeners();
   }
-
 }
-
